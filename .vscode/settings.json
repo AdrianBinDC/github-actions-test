@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://json.schemastore.org/github-workflow.json": "file:///Users/adrianbolinger/Documents/Developer/GitHubActions/github-actions-test/.github/workflows/simple.yml"
+    }
+}
