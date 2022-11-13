@@ -11,7 +11,15 @@ jobs:
         # ls will not produce output because the directory is empty
         run: |
           pwd
-          ls
+          ls -a
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: List Files After Checkout
+        # by default, GitHub will not clone your files into your directory, so
+        # ls will not produce output because the directory is empty
+        run: |
+          pwd
+          ls -a
       - name: Simple JS Action
         # id is how you assign a name to an output
         # you can access the name assigned (ex: greet) as follows:
