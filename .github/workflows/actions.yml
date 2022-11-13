@@ -5,7 +5,19 @@ on:
   # schedule:
   #   - cron: "11/5 * * * *"
   #   - cron: "11/6 * * * *"
-  # push:
+  push:
+    branches:
+      - main
+      - 'feature/*'
+      - 'feature/**'
+      - '!feature/featC'
+    tags:
+      - v1.*
+    paths:
+      # constrain to javascript files
+      - '**.js'
+  # repository_dispatch is triggered manually. skipping
+  repository_dispatch:
   pull_request:
     types:
       - closed
