@@ -1,9 +1,10 @@
 name: Actions Workflow
 
 on:
-  schedule:
-    - cron: "11/5 * * * *"
-    - cron: "11/6 * * * *"
+  # DISABLED SCHEDULE COMMENTED OUT BELOW
+  # schedule:
+  #   - cron: "11/5 * * * *"
+  #   - cron: "11/6 * * * *"
   # push:
   pull_request:
     types:
