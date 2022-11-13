@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: List Files
+        # by default, GitHub will not clone your files into your directory, so
+        # ls will not produce output because the directory is empty
         run: |
           pwd
           ls
