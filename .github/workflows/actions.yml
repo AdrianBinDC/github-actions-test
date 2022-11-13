@@ -11,6 +11,9 @@ jobs:
           pwd
           ls
       - name: Simple JS Action
+        # id is how you assign a name to an output
+        # you can access the name assigned (ex: greet) as follows:
+        # ${{ steps.greet.outputs.time }}
         id: greet
         uses: actions/hello-world-javascript-action@v1
         with:
